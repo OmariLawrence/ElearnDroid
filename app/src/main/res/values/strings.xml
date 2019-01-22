@@ -1,0 +1,102 @@
+<resources>
+    <string name="app_name">ElearnDroid2018</string>
+    <string name="title_activity_topics">Topics</string>
+    <string name="title_activity_topic_detail">Topic Details</string>
+    <string name="title_activity_quiz">Quiz</string>
+    <string name="title_activity_paper_select">Paper Select</string>
+    <string name="title_activity_paper">Paper</string>
+    <string-array name="topic_list">
+        <item>Toast</item>
+        <item>DatePicker</item>
+        <item>ImageView</item>
+        <item>ListView</item>
+        <item>Spinner</item>
+        <item>EditText</item>
+        <item>Button</item>
+        <item>NumberPicker</item>
+    </string-array>
+    <string-array name="descriptions">
+        <item>Toast: A simple message in a small pop up</item>
+        <item>DatePicker: Provides a widget for selecting a date</item>
+        <item>ImageView: Displays a provided image</item>
+        <item>ListView: Displays a list of scrollable items</item>
+        <item>Spinner: Provides a dropdown menu</item>
+        <item>EditText: Provides a place for the user to input text</item>
+        <item>Button: Creates a button</item>
+        <item>NumberPicker: A widget that enables the user to select a number from a predefined range</item>
+    </string-array>
+    <string-array name="code">
+        <item>Toast.makeText(TopicDetail.this,"This is a toast",Toast.LENGTH_LONG).show();</item>
+        <item>
+            DatePicker
+            android:id="@+id/DP"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_centerHorizontal="true"
+        </item>
+        <item>
+            ImageView
+            android:id="@+id/IV"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:src="@drawable/androidteacher"
+        </item>
+        <item>
+            ListView
+            android:id="@+id/LV"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:entries="@array/topic_list"
+        </item>
+        <item>
+            Spinner
+            android:id="@+id/spin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/topic_list"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+        </item>
+        <item>
+            EditText
+            android:id="@+id/ET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Text Here"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+        </item>
+        <item>
+            Button
+            android:id="@+id/But"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+        </item>
+        <item>
+            NumberPicker
+            android:id="@+id/NP"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+        </item>
+    </string-array>
+    <string-array name="papertitle">
+        <item>Research on Development of Android Applications</item>
+        <item>Game based education with android mobile devices</item>
+    </string-array>
+    <string-array name="Authors">
+        <item>Jianye Liu and Jiankun Yu</item>
+        <item>Song Zengbin, Huang Jin and Wu Guangxu</item>
+    </string-array>
+    <string-array name="YOP">
+        <item>2011</item>
+        <item>2012
+        </item>
+    </string-array>
+    <string-array name="summaries">
+        <item>Introduced the Android platform and the features of Android applications, gave a detailed description of Android application framework from the prospective of developers. A simple music player is provided as instance to illustrate the basic working processes of Android application components. This paper could provide guidance to understanding the operation mechanism of Android applications and to developing applications on Android platform.</item>
+        <item>Android system is a research hotspot in recent years, so a beautiful UI become more important. Matrix-based can make android UI development more easily and quickly, and the software also run faster than developed by openGL_ES. In the paper, We first briefly introduce two-dimensional graphics geometric transformation, then combined android graphics matrix to introduce it in detail. Finally, we introduce the use of android. graphics. camera to achieve 3D effect, and also give some codes and 3D screenshots of program.</item>
+    </string-array>
+</resources>

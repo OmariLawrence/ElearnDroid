@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Quiz">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:id="@+id/timer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/colours"/>
+        <RadioGroup
+            android:id="@+id/RG1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/timer">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Q1: Which of the following allows the user to enter text?"/>
+            <RadioButton
+                android:id="@+id/rb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Button" />
+            <RadioButton
+                android:id="@+id/rb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit Text" />
+            <RadioButton
+                android:id="@+id/rb3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Text View" />
+        </RadioGroup>
+        <RadioGroup
+            android:id="@+id/RG2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/RG1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Q2: Which of the following uses a drop down menu?"/>
+            <RadioButton
+                android:id="@+id/rb4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Spinner" />
+            <RadioButton
+                android:id="@+id/rb5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Number Picker" />
+            <RadioButton
+                android:id="@+id/rb6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Toast" />
+        </RadioGroup>
+        <RadioGroup
+            android:id="@+id/RG3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/RG2">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Q3: What does the Date picker use to make you choose a day"/>
+            <RadioButton
+                android:id="@+id/rb7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A Calender" />
+            <RadioButton
+                android:id="@+id/rb8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Drop down menus" />
+            <RadioButton
+                android:id="@+id/rb9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A Scroller" />
+        </RadioGroup>
+        <RadioGroup
+            android:id="@+id/RG4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/RG3">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Q4:How long does can a toast last?"/>
+            <RadioButton
+                android:id="@+id/rb10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5 seconds" />
+            <RadioButton
+                android:id="@+id/rb11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 second" />
+            <RadioButton
+                android:id="@+id/rb12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 seconds" />
+        </RadioGroup>
+        <RadioGroup
+            android:id="@+id/RG5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/RG4">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Q5: What is used to put the values for a list?"/>
+            <RadioButton
+                android:id="@+id/rb13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="android: options" />
+            <RadioButton
+                android:id="@+id/rb14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="android: entries" />
+            <RadioButton
+                android:id="@+id/rb15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="android: items" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Intents Callback"
+            android:layout_below="@id/RG5"
+            android:onClick="getResult"/>
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+</ScrollView>
